@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 122758329}
   - component: {fileID: 122758328}
   - component: {fileID: 122758327}
+  - component: {fileID: 122758330}
   m_Layer: 0
   m_Name: Rules Button
   m_TagString: Untagged
@@ -183,7 +184,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 122758328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 122758330}
+        m_MethodName: OpenRules
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &122758328
@@ -219,6 +231,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122758325}
+--- !u!114 &122758330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 122758325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7770a5b1c9b97194caf45aa62b759311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &231508748
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,8 +327,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 699348335}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -423,7 +445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 366846045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c4e8828e7591f40be40c244de97f92, type: 3}
+  m_Script: {fileID: 11500000, guid: 075bbab3c9f8a9e47bfe58b40f51cf53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &366846048
@@ -465,8 +487,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: f5c4e8828e7591f40be40c244de97f92, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 366846047}
+        m_MethodName: ExitApplication
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -683,8 +705,8 @@ RectTransform:
   - {fileID: 122758326}
   - {fileID: 366846046}
   - {fileID: 556753865}
-  m_Father: {fileID: 231508753}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
