@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rules.unity
     guid: 4d795b6bc35386749bb5d7e12a70d178
+  - enabled: 1
+    path: Assets/Scenes/LowTireInfo.unity
+    guid: 44005ab2d7f28ef4a8a3d16091b73190
+  - enabled: 1
+    path: Assets/Scenes/LowTireScene.unity
+    guid: eed1b8e99a4e9754ea8a3e46a83b4c3f
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 393fbb61ce8746c43a37c37d404a4e2d
