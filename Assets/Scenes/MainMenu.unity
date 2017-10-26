@@ -186,7 +186,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 122758330}
-        m_MethodName: OpenRules
+        m_MethodName: LoadRules
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 122758325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7770a5b1c9b97194caf45aa62b759311, type: 3}
+  m_Script: {fileID: 11500000, guid: 297860680f19cbc4795a40df0585eb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &231508748
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 366846045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075bbab3c9f8a9e47bfe58b40f51cf53, type: 3}
+  m_Script: {fileID: 11500000, guid: 297860680f19cbc4795a40df0585eb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &366846048
@@ -1069,7 +1069,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1378199067}
-        m_MethodName: LoadTireInfoScene
+        m_MethodName: LoadTireInfo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1122,6 +1122,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1378199062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebb43850a7b269249afcc404d619cf12, type: 3}
+  m_Script: {fileID: 11500000, guid: 297860680f19cbc4795a40df0585eb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
