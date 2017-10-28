@@ -6,6 +6,6 @@ public class ContinueButton : MonoBehaviour {
     public GameObject image;    
 
     public void OnButtonClick() {
-        Destroy(image);
+        image.SetActive(false);
     }
 }
