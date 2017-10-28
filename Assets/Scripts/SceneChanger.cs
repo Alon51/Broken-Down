@@ -17,6 +17,10 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene("LowTireScene");
     }
 
+    public void LoadAirPressureTrivia() {
+        SceneManager.LoadScene("AirPressureTrivia");
+    }
+
     public void LoadRules() {
         SceneManager.LoadScene("Rules");
     }
