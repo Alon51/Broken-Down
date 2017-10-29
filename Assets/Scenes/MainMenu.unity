@@ -1069,7 +1069,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1378199067}
-        m_MethodName: LoadTireInfo
+        m_MethodName: LoadMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

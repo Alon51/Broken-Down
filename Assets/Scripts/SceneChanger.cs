@@ -22,6 +22,10 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene("AirPressureTrivia");
     }
 
+    public void LoadMap() {
+        SceneManager.LoadScene("Map");
+    }
+
     public void LoadRules() {
         SceneManager.LoadScene("Rules");
     }
