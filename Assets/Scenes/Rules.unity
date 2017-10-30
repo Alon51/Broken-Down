@@ -141,10 +141,10 @@ RectTransform:
   m_Father: {fileID: 763840614}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.5000305, y: 25}
-  m_SizeDelta: {x: 225, y: 50}
+  m_AnchorMin: {x: 0.425, y: 0}
+  m_AnchorMax: {x: 0.5731251, y: 0}
+  m_AnchoredPosition: {x: 0.9999695, y: 25}
+  m_SizeDelta: {x: -12, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251156642
 MonoBehaviour:
@@ -594,10 +594,10 @@ RectTransform:
   m_Father: {fileID: 763840614}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -57.650024}
-  m_SizeDelta: {x: 1148, y: 115.3}
+  m_AnchorMin: {x: 0, y: 0.78785396}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.033996582}
+  m_SizeDelta: {x: 0, y: -0.070007324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414383438
 MonoBehaviour:
@@ -620,11 +620,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 70
+    m_MinSize: 1
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -738,7 +738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05438676, y: 0.13250937}
   m_AnchorMax: {x: 0.9452265, y: 0.78785396}
-  m_AnchoredPosition: {x: 0, y: -0.000015259}
+  m_AnchoredPosition: {x: 0, y: -0.000005722}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918325849
@@ -762,7 +762,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -773,18 +773,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The goal of this game is to overcome all of the obstacles, and solve all
-    of the problems that you come across. Doing so, you will (hopefully) learn a lot
-    about basic car maintenance, and have fun while doing so!
-
-
-    Each scenario will provide a different task, and for each one there will be different
-    controls. While it is impossible to lose the game, you will be penalized for mistakes,
-    as well as rewarded for a job well done.
-
-
-    At the end, you will be given an idea of just how much money and time you can
-    save by performing simple tasks on your vehicle!'
+  m_Text: "The goal of this game is to overcome all of the obstacles, and solve all
+    of the problems that you come across. Hopefully, you will learn a lot about basic
+    car maintenance, and have fun while doing so!\n\nEach scenario will provide a
+    different task, and for each one there will be different controls. \n\nWhile it
+    is impossible to lose the game, you will be penalized for mistakes, as well as
+    rewarded for a job well done.\n\nAt the end, you will be given an idea of just
+    how much money and time you can save by performing simple tasks on your vehicle!\n\nFrom
+    here, you will head to the Map. Use the WASD keys to drive into your first scenario!"
 --- !u!222 &1918325850
 CanvasRenderer:
   m_ObjectHideFlags: 0

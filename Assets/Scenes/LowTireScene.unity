@@ -494,6 +494,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 680946805}
+  - {fileID: 920653109}
+  - {fileID: 685743660}
+  - {fileID: 685661582}
+  - {fileID: 509341791}
   m_Father: {fileID: 450961210}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -655,10 +659,10 @@ RectTransform:
   m_Father: {fileID: 745574591}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 50}
+  m_AnchorMin: {x: 0.43500003, y: 0}
+  m_AnchorMax: {x: 0.5675, y: 0.060000002}
+  m_AnchoredPosition: {x: 1.0999985, y: -2}
+  m_SizeDelta: {x: -5.800003, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338261526
 MonoBehaviour:
@@ -1127,6 +1131,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: {fileID: 1180476321}
+--- !u!1 &509341790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 509341791}
+  - component: {fileID: 509341793}
+  - component: {fileID: 509341792}
+  m_Layer: 5
+  m_Name: Tire Air
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &509341791
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509341790}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 303560982}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.8393751, y: 0}
+  m_AnchorMax: {x: 1, y: 0.17222223}
+  m_AnchoredPosition: {x: -0.5004883, y: 0}
+  m_SizeDelta: {x: 1, y: 5.200012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &509341792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509341790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 3fdeefe4c6ea624489b7acecb32b0f83, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &509341793
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509341790}
 --- !u!1 &581316058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,7 +1391,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1330,20 +1402,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You got the correct Air Pressure!\n\nEvery car has a sticker on the inside
-    of the doorjam that gives important information about the tires, size, and air
-    pressure. This information provides you the best case circumstances for your car.\n\nHere
-    are some tips that you should keep in mind to avoid this situation, or to solve
-    it if you are ever in this scenario.\n\n1) Keep an eye on your dashboard. There
-    is a tire sensor light that tells you when the pressure is off. Paying attention
-    to this can help prevent damage to your tires and other things.\n\n2) When adding
-    air to the tire, you must first locate the valve and remove the cap.\n\n3) The
-    best way to check your own tire pressure is with a tire gauge. It is recommended
-    to get your own from a car store, since many gauges at gas stations are inaccurate.
-    \n\n4) When adding air, do it in short bursts. Holding it down for too long can
-    result in overinflated tires. If you add too much, you can press the valve in
-    to let some air out. Keep checking the pressure to get the right amount, and when
-    it is perfect, then seal it back up."
+  m_Text: "You put in the correct air pressure!\n\nEvery car has a sticker on the
+    inside of the doorjam that gives important information about the tires, size,
+    and air pressure. This information provides you the best case circumstances for
+    your car.\n\nHere are some tips that you should keep in mind to avoid this situation,
+    or to solve it if you are ever in this scenario.\n\n1) Keep an eye on your dashboard.
+    There is (usually) a tire sensor light that tells you when the pressure is off.
+    Paying attention to this can help you track how your tires are doing on air.\n\n2)
+    When adding air to the tire, you must first locate the valve and remove the cap.
+    Then, it is just a matter of adding the right amount of air.\n\n3) The best way
+    to check your own tire pressure is with a tire gauge. It is recommended to get
+    your own from a car store, since many gauges at gas stations are inaccurate. \n\n4)
+    When adding air, do it in short bursts. Holding it down for too long can result
+    in overinflated tires. If you add too much, you can press the valve in to let
+    some air out. Keep checking the pressure to get the right amount, and when it
+    is perfect, then seal it back up."
 --- !u!222 &680946807
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1444,6 +1517,142 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &685661581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 685661582}
+  - component: {fileID: 685661584}
+  - component: {fileID: 685661583}
+  m_Layer: 5
+  m_Name: Tire Gauge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &685661582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685661581}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 303560982}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.55125016, y: 0}
+  m_AnchorMax: {x: 0.708125, y: 0.17222223}
+  m_AnchoredPosition: {x: 1, y: 2.600006}
+  m_SizeDelta: {x: 7, y: 5.200012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &685661583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685661581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: bc66e150104d63541a4aa4821249348f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &685661584
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685661581}
+--- !u!1 &685743659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 685743660}
+  - component: {fileID: 685743662}
+  - component: {fileID: 685743661}
+  m_Layer: 5
+  m_Name: Tire Valve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &685743660
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685743659}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 303560982}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.26812503, y: 0}
+  m_AnchorMax: {x: 0.42937505, y: 0.17222223}
+  m_AnchoredPosition: {x: -4, y: 2.6}
+  m_SizeDelta: {x: 0, y: 5.200012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &685743661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685743659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 899dca2bfba861f43b1dddf8b408c481, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &685743662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685743659}
 --- !u!1 &697482024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +2069,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889377611}
+--- !u!1 &920653108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 920653109}
+  - component: {fileID: 920653111}
+  - component: {fileID: 920653110}
+  m_Layer: 5
+  m_Name: Tire Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &920653109
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 920653108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 303560982}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.16125001, y: 0.17222223}
+  m_AnchoredPosition: {x: 0, y: 2.600006}
+  m_SizeDelta: {x: 0, y: 5.200012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &920653110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 920653108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: f78e7d30e0c392740b9e1c2e680efd19, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &920653111
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 920653108}
 --- !u!1 &930018710
 GameObject:
   m_ObjectHideFlags: 0
@@ -3020,7 +3297,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3034,10 +3311,35 @@ MonoBehaviour:
   m_Text: 'You put in the incorrect amount of air.
 
 
-    Every car has a sticker on the inside of the doorjam that gives important information
-    about the tires, size, and air pressure. This information provides you the best
-    case circumstances for your car. Not all sources of information are accurate,
-    and you want to make sure you follow the correct one.'
+    Every car has a sticker on the inside of the doorjam that lists important information,
+    such as tire size, required air pressure, and more. This information is the most
+    accurate and reliable source for your specific car.
+
+
+    Over time, tires lose air naturally, due to weather changing and wear and tear.
+    Making sure you have the correct amount at all times is important, since having
+    incorrect numbers can result in a lot of problems, such as:
+
+
+    1) Your car may take a hit to any of the following: handlng, braking, fuel economy,
+    and comfort.
+
+
+    2) Overinflated tires result in less tire touching the ground, which creates a
+    harsher ride, compromised traction, and slower stopping ability. Just 6 PSI (Pounds
+    per square inch) over the recommended value, and your tire is much more vulnerable
+    to being harmed by debris or potholes.
+
+
+    3) Overinflated tires lead to excessive wear to the inner treads, which decreases
+    the life expectancy of the tires.
+
+
+    4) Overinflated tires can heat up and burst in extreme conditions.
+
+
+    5) Underinflated tires cause too much of the tire to be in contact with the road,
+    which causes extra resistance, and reduces tire life, as well as fuel economy.'
 --- !u!222 &1614956106
 CanvasRenderer:
   m_ObjectHideFlags: 0
