@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - LowTireInfo
+  - ChangeTireInfo
   layers:
   - Default
   - TransparentFX

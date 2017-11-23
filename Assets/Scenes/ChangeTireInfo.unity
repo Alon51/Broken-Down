@@ -528,12 +528,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'On your way, you notice your car pulling to the side. You realize that
-    your tire is low on air!
+  m_Text: 'While driving, you hear a loud noise. There seems to be a nail stuck in
+    your tire. It is quickly deflating, and you are not near a gas station.
 
 
-    Your task is simple; fill the tire with air. Be careful you do not add too much,
-    or too little!
+    Your task is to assess the problem, and change the tire.
 
 '
 --- !u!222 &1148949803
