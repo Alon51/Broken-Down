@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LowTireInfo
   - ChangeTireInfo
+  - StuckInSnowScene
   layers:
   - Default
   - TransparentFX

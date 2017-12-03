@@ -13,5 +13,10 @@ public class SceneCollider : MonoBehaviour {
         if (other.CompareTag("ChangeTireInfo")) {
             SceneManager.LoadScene(other.tag);
         }
+
+        if (other.CompareTag("StuckInSnowScene"))
+        {
+            SceneManager.LoadScene(other.tag);
+        }
     }
 }
