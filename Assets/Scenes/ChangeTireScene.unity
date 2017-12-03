@@ -2005,6 +2005,7 @@ GameObject:
   - component: {fileID: 868290588}
   - component: {fileID: 868290587}
   - component: {fileID: 868290586}
+  - component: {fileID: 868290589}
   m_Layer: 5
   m_Name: Continue Button
   m_TagString: Untagged
@@ -2070,12 +2071,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 868290584}
-        m_MethodName: 
+      - m_Target: {fileID: 868290589}
+        m_MethodName: LoadMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2116,6 +2117,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 868290584}
+--- !u!114 &868290589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868290584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297860680f19cbc4795a40df0585eb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &876142130
 GameObject:
   m_ObjectHideFlags: 0
