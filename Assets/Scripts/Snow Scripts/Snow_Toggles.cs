@@ -10,44 +10,57 @@ public class Snow_Toggles : MonoBehaviour {
     public Toggle dirt;
     public Toggle tire;
     public Toggle pedal;
-  
+
+	//bool sequence = false;
+	public bool first = false;
+	public bool second = false;
+	public bool third = false;
+	public bool fourth = false;
+	public bool fifth = false;
 
     public GameObject snowCorrectCanvas;
     public GameObject snowIncorrectCanvas;
     public GameObject scenarioCanvas;
 
-    public void OnButtonClick()
-    {
-        int sequence = 0;
 
-        if (traction.isOn)
-        {
-            sequence++;
-        }
+	public void First(){
 
-        if (traction.isOn && shovel.isOn)
-        {
-            sequence++; ;
-        }
+		if (traction.isOn && !shovel.isOn && !dirt.isOn && !tire.isOn && !pedal.isOn) {
+			first = true;
+			//sequence=1;
+		}
 
-        if (traction.isOn && shovel.isOn && dirt.isOn)
-        {
-            sequence++;
-        }
+	}
 
-        if (traction.isOn && shovel.isOn && dirt.isOn && tire.isOn)
-        {
-            sequence++;
-        }
+	public void Second(){
+		if (traction.isOn && shovel.isOn && !dirt.isOn && !tire.isOn && !pedal.isOn && first) {
+			second = true;
+			//sequence=2;
+		}
+	}
 
-        if (traction.isOn && shovel.isOn && dirt.isOn && tire.isOn && pedal.isOn)
-        {
-            sequence++;
-        }
+	public void Third(){
+		if (traction.isOn && shovel.isOn && dirt.isOn && !tire.isOn && !pedal.isOn && second) {
+			third = true;
+			//sequence=3;
+		}
+	}
 
-        else {
+	public void Fourth(){
+		if (traction.isOn && shovel.isOn && dirt.isOn && tire.isOn && !pedal.isOn && third) {	
+			fourth = true;
+			//sequence=4;
+		}
+	}
+	public void Fifth(){
+		if (traction.isOn && shovel.isOn && dirt.isOn && tire.isOn && pedal.isOn && fourth) {
+			fifth = true;
+		}
+	}
 
-            sequence = 0;
+		/* else {
+
+            //sequence = false;
 
             traction.isOn = false;
             shovel.isOn = false;
@@ -55,20 +68,26 @@ public class Snow_Toggles : MonoBehaviour {
             tire.isOn = false;
             pedal.isOn = false;
 
-        }
+			//first = false;
+			//second = false;
+			//third = false;
+			//fourth = false;
+			//fifth = false;
 
+        }*/
+    public void Submit()
+    {
+        //int sequence = 0;
 
-
-        if (sequence == 5)
+        if (fifth == true)
         {
             scenarioCanvas.SetActive(false);
             snowCorrectCanvas.SetActive(true);
         }
         else
         {
-            scenarioCanvas.SetActive(false);
-            snowIncorrectCanvas.SetActive(true);
-            sequence = 0;
+			scenarioCanvas.SetActive (false);snowIncorrectCanvas.SetActive(true);
+            //sequence = 0;
         }
     }
 }
