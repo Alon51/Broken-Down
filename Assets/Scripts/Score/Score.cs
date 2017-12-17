@@ -16,7 +16,7 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		scoreTxt.text = "Saved: $" + GameControl.Instance.getScore ();
 	}
 
 	public void IncreaseScore(int addend){
