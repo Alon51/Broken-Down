@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CheckToggles : MonoBehaviour {
+	private int timesTried=0;
     public Toggle manual;
     public Toggle gloves;
     public Toggle plank;
@@ -34,9 +35,11 @@ public class CheckToggles : MonoBehaviour {
         }
 
         if(numCorrect == 4) {
+			GameControl.Instance.increaseScore (300 - (20 * timesTried));
             thisCanvas.SetActive(false);
             correctCanvas.SetActive(true);
         } else {
+			timesTried++;
             thisCanvas.SetActive(false);
             incorrectCanvas.SetActive(true);
         }

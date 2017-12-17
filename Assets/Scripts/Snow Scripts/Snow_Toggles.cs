@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Snow_Toggles : MonoBehaviour {
 
+	private int timesTried = 0;
+
     public Toggle traction;
     public Toggle shovel;
     public Toggle dirt;
@@ -57,11 +59,13 @@ public class Snow_Toggles : MonoBehaviour {
     {
         if (fifth == true)
         {
+			GameControl.Instance.increaseScore (150 - (timesTried * 7));
             scenarioCanvas.SetActive(false);
             snowCorrectCanvas.SetActive(true);
         }
         else
         {
+			timesTried++;
 			scenarioCanvas.SetActive (false);snowIncorrectCanvas.SetActive(true);
 			traction.isOn = false;
 			shovel.isOn = false;
