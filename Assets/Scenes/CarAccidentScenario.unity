@@ -3267,7 +3267,7 @@ GameObject:
   - component: {fileID: 1352535909}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: CarSccidentScene
+  m_TagString: Accident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
