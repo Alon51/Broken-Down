@@ -18,5 +18,9 @@ public class SceneCollider : MonoBehaviour {
         {
             SceneManager.LoadScene(other.tag);
         }
+		if (other.CompareTag("Accident"))
+		{
+			SceneManager.LoadScene("CarAccident");
+		}
     }
 }

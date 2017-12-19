@@ -7,6 +7,9 @@ TagManager:
   - LowTireInfo
   - ChangeTireInfo
   - StuckInSnowScene
+  - Accident
+  - CarAccident
+  - CarSccidentScene
   layers:
   - Default
   - TransparentFX
