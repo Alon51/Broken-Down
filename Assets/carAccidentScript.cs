@@ -7,8 +7,8 @@ public class carAccidentScript : MonoBehaviour {
 
 
 	public void onClick(){
-	
-		SceneManager.LoadScene("Accident");
+		
+		SceneManager.LoadScene (9);// will load the accident scene
 	}
 
 	// Use this for initialization

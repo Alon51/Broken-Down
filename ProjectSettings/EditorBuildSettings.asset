@@ -32,6 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CarAccident.unity
     guid: e932973fbfb6fe44aa6f86a32a753bc9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CarAccidentScenario.unity
     guid: 827c2076a4ee300459681099e076f0c0
