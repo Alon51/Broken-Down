@@ -30,6 +30,11 @@ public class SceneChanger : MonoBehaviour {
         SceneManager.LoadScene("Map");
     }
 
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void LoadRules() {
         SceneManager.LoadScene("Rules");
     }
